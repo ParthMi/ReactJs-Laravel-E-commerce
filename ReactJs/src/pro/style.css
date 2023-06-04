@@ -1,0 +1,359 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* font-family: "Lato", sans-serif;
+     */
+     font-family: Consolas, monaco, monospace;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: -1;
+    opacity: 0;
+    transition: 1s all;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding: 0px 70px;
+    background-color: #fff;
+  }
+  .navbar-logo {
+    color: #ff3f34;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 0px 20px;
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+    display: flex;
+  }
+  .navbar-links li .a {
+    display: block;
+    text-decoration: none;
+    color: #444;
+    padding: 20px 20px;
+    font-weight: 700;
+    transition: 0.4s all;
+  }
+  
+  .navbar-links li.navbar-dropdown {
+    position: relative;
+  }
+  
+  .navbar-links li.navbar-dropdown:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  
+  .navbar-links li.navbar-dropdown .dropdown {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    padding: 20px 0;
+    top: 100%;
+    transform: translateY(50px);
+    left: 0;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 0px 10px 10px 3px rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    z-index: 111;
+    transition: 0.4s all;
+  }
+  .navbar-links li.navbar-dropdown .dropdown .a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 400;
+  }
+  .navbar-dropdown .dropdown .a:hover {
+    padding-left: 30px;
+  }
+  .navbar-links li .a:hover {
+    color: #ff3f34;
+  }
+  
+  .login-btn{
+    font-size: 15px;
+    padding: 8px;     
+    font-family: Consolas, monaco, monospace;
+    margin: 10px;
+    border-radius: 35px;
+    width: 100px;
+    border:3px solid black;
+    background-color: black;
+    color:white;
+    margin-right: 0;
+    cursor: pointer;
+  }
+ 
+.logout-btn{
+    font-size: 17px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+    width: 150px;
+    border:3px solid black;
+    background-color: black;
+    color:white;
+}
+
+
+
+  
+
+
+
+
+
+
+
+.product-card{
+    padding: 10px;
+    font-family:arial,sans-serif;
+    height: auto;
+    width: 200px;
+    border-radius: 30px;
+    background-color: #d0e8f0;
+}
+.product-name{
+    padding: 10px;
+    font-weight: 700;
+    font-size: 17px;
+}
+.product-image{
+        height: auto;
+        height: 200px;
+}
+.product-price{
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.product-type{
+    margin-top: 10px;
+    color:#333;
+    font-weight: 700;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.product-details{
+    height: 110px;
+    padding: 10px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: white;
+    box-shadow: 3px 3px 3px rgb(99, 99, 99);
+
+}
+.product-order{
+    padding: 10px;
+}
+.product-order-btn{
+    font-size: 17px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-weight: 700;
+    height: 40px;
+    width: 100%;
+    box-shadow: 10px 10px 15px rgb(95, 93, 93);
+    border-radius: 20px;
+    border: 1px solid rgb(243, 241, 241);
+}
+
+.filter{
+    padding:14px;
+    display: flex;
+}
+.filter-btn{
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 10px;
+    height: 40px;
+    border: 3px solid black;
+    background-color:black;
+    color: white;
+    border-radius: 25px;
+    width: 140px;
+    font-size: 17px;
+}
+
+
+.display{
+    display: grid;
+
+grid-template-columns: repeat(6, 1fr);
+
+grid-auto-rows: auto;
+
+grid-gap: 2rem;
+}.loader {
+   
+    position: fixed;
+     display: block;
+height: 100%;
+width: 100%;
+  opacity: 1;
+  background-color: #ffffff;
+  z-index: 99;
+  }
+  .loader .load{
+    content:url(https://cdn.dribbble.com/users/115601/screenshots/5356365/loading.gif);
+    width: 400px;
+    height: 250px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  
+  animation: 2s linear infinite;
+
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+
+
+
+
+  .loginscreen{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .loginscreen-form{
+    width: 250px;
+
+	padding-top: 156px;
+  }
+  .loginscreen-email{
+    
+    margin-bottom: 10px;    
+    height: 35px;
+    font-size: 15px;
+    font-family: Consolas, monaco, monospace;
+    border-radius: 20px;
+    background-color: transparent;
+    text-indent: 1em;
+    width: 300px;
+    
+    
+  }
+  .loginscreen-btn{
+    padding: 10px;
+    width: 120%;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+  }
+
+
+  .loginscreen-msg{
+    font-size: 20px;
+    font-weight: 600;
+    color: red;
+    margin-left:20%;
+  }
+
+  .contact-form{
+    margin-left:38%;
+    margin-right:auto;
+    width: 250px;
+    display: block;
+	padding-top: 126px;
+  }
+  
+  .register-form{
+    margin-left:38%;
+    margin-right:auto;
+    width: 250px;
+    display: block;
+	padding-top: 126px;
+  }
+
+  .nothing-btn{
+    width: 100px;
+    cursor: pointer;
+    border-radius: 30px;
+    height: 30px;
+    font-size: 15px;
+    font-family: Consolas, monaco, monospace;
+    color: white;
+    background-color: black;
+  }
+
+
+  .profile-items{
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  .order-form{
+    margin-left:38%;
+    margin-right:auto;
+    width: 250px;
+    display: block;
+    display: contents;
+  }
+
+
+  .order-email{
+    
+    margin-bottom: 10px;    
+    height: 35px;
+    font-size: 15px;
+    font-family: Consolas, monaco, monospace;
+    border-radius: 10px;
+    background-color: transparent;
+    text-indent: 1em;
+    width: 500px;
+    
+    
+  }
+  .order-div
+  {
+    padding: 100px;
+  }
+  .order-address{
+    margin-bottom: 10px;    
+    font-size: 15px;
+    font-family: Consolas, monaco, monospace;
+    border-radius: 10px;
+    background-color: transparent;
+    text-indent: 1em;
+    
+  }
+
+  .order-buy-btn{
+    margin-left: 70%;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    width: 200px;
+    padding: 10px;
+    cursor: pointer;
+  }

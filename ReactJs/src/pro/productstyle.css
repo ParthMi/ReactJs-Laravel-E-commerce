@@ -1,0 +1,89 @@
+@media screen and (max-width:860px) {
+    .product-name {
+        margin: -8px;
+        height: 35px;
+        background-color: rgba(236, 231, 231, 0.692);
+        color: rgb(0, 0, 0);
+    }
+    .rowstart .product-name .fa {
+        margin-top: 12px;
+        margin-left: 20px;
+    }
+    .rowstart .product-name h3 {
+        margin-top: 7px;
+        margin-left: 10px;
+    }
+    .rowstart img {
+        width: 100%;
+    }
+    .product-img {
+        margin-top: 10px;
+    }
+    .pro-name {
+        font-size: 16px;
+            margin-left: 10px;
+    }
+    .price-div {
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    .buy-btn button {
+        height: 40px;
+        width: 96%;
+        margin-right: 10px;
+        bottom: 0;
+        position: fixed;
+        padding: -10px;
+        background: rgb(0, 0, 0);
+        font-weight: 400;
+        font-size: 18px;
+        color: white;
+        border: none;
+    }
+    .buy-btn2 {
+        display: none;
+    }
+    .min600buybtn {
+        display: none;
+    }
+}
+
+@media screen and (min-width:860px) {
+    
+    .rowstart .product-name .fa {
+        display: none;
+    }
+    .rowstart .product-img {
+        width: 50%;
+    }
+    .rowstart .product-img img {
+        width: 400px;
+    }
+    .rowstart .pro-name {
+        width: 50%;
+    }
+    .rowstart {
+        display: flex;
+    }
+    .buy-btn button.buy-btn1 {
+        display: none;
+    }
+    .buy-btn2 button.buy-btn1 {
+        height: 40px;
+        width: 200px;
+        bottom: 0;
+        padding: -10px;
+        background: rgb(0, 0, 0);
+        font-weight: 400;
+        font-size: 18px;
+        color: white;
+        border: none;
+    }
+    .min600buybtn {
+        width: 200px;
+        margin-left: 0;
+    }
+}
+
+
+
